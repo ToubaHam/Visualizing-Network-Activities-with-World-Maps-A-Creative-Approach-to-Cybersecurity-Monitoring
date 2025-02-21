@@ -1,4 +1,4 @@
-# Visualizing-Network-Activities-with-World-Maps-A-Creative-Approach-to-Cybersecurity-Monitoring
+# 🌐 Visualizing Network Activities with World Maps A Creative Approach to Cybersecurity Monitoring
 In this project, I focused on building world map visualizations to understand and analyze network activities. Using logs generated within our environment—a mix of legitimate user data and malicious actor activities—I created interactive maps that visually represent what’s happening across the network. These maps help identify patterns, potential threats, and anomalies, providing actionable insights for improving cybersecurity defenses.
 
 Here, I’ll walk you through five scenarios that were visualized using KQL (Kusto Query Language) in Azure Sentinel. For each, I’ve included screenshots and detailed KQL scripts to demonstrate how these visualizations were built.
