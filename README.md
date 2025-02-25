@@ -66,8 +66,9 @@ DeviceLogonEvents
 | order by TimeGenerated desc
 | evaluate ipv4_lookup(GeoIPDB_FULL, RemoteIP, network)
 | summarize LoginAttempts = count() by RemoteIP, City = cityname, Country = countryname, friendly_location = strcat(cityname, " (", countryname, ")"), Latitude = latitude, Longitude = longitude;
-![4](https://github.com/user-attachments/assets/07bcb68d-cd10-410f-9974-2cb2204f8fbd)
 ```
+![4](https://github.com/user-attachments/assets/07bcb68d-cd10-410f-9974-2cb2204f8fbd)
+
 5. Malicious Traffic Entering the Network
 
 Objective
@@ -82,9 +83,9 @@ let MaliciousFlows = AzureNetworkAnalytics_CL
 MaliciousFlows
 | evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network)
 | project TimeGenerated, FlowType, IpAddress, DestinationIpAddress, DestinationPort, Protocol, NSGRuleMatched, latitude, longitude, city = cityname, country = countryname, friendly_location = strcat(cityname, " (", countryname, ")")
+```
 ![5](https://github.com/user-attachments/assets/55fd6bea-2fef-483f-a421-64a2e4f1afef)
 
-```
 
 
 
