@@ -2,7 +2,7 @@
 In this project, I focused on building world map visualizations to understand and analyze network activities. Using logs generated within our environment—a mix of legitimate user data and malicious actor activities—I created interactive maps that visually represent what’s happening across the network. These maps help identify patterns, potential threats, and anomalies, providing actionable insights for improving cybersecurity defenses.
 
 Here, I’ll walk you through five scenarios that were visualized using KQL (Kusto Query Language) in Azure Sentinel. For each, I’ve included screenshots and detailed KQL scripts to demonstrate how these visualizations were built.
-1. Entra ID (Azure) Authentication Success
+# 1. Entra ID (Azure) Authentication Success
 
 Objective
 
@@ -15,7 +15,7 @@ SigninLogs
 ```
 ![1](https://github.com/user-attachments/assets/9a9dcf3a-acdc-4658-8a61-b8cc2102ff5e)
 
-2. Entra ID (Azure) Authentication Failures
+# 2. Entra ID (Azure) Authentication Failures
 
 Objective
 
@@ -28,7 +28,7 @@ SigninLogs
 ```
 ![2](https://github.com/user-attachments/assets/fa6bebc2-4284-4903-a8b9-3615d08b493c)
 
-3. Azure Resource Creation
+# 3. Azure Resource Creation
 
 Objective
 
@@ -54,7 +54,7 @@ AzureActivityRecords
 ```
 ![3](https://github.com/user-attachments/assets/daf006a2-65f0-4e4b-9b32-fe570a87d962)
 
-4. VM Authentication Failures
+# 4. VM Authentication Failures
 
 Objective
 
@@ -69,7 +69,7 @@ DeviceLogonEvents
 ```
 ![4](https://github.com/user-attachments/assets/07bcb68d-cd10-410f-9974-2cb2204f8fbd)
 
-5. Malicious Traffic Entering the Network
+# 5. Malicious Traffic Entering the Network
 
 Objective
 
@@ -89,7 +89,7 @@ MaliciousFlows
 
 
 
-Conclusion
+## Conclusion
 
 These visualizations provide a vivid and practical way to monitor network activity, track potential threats, and enhance your organization’s cybersecurity posture. By leveraging the power of Azure Sentinel and KQL, security teams can create tailored dashboards to address specific needs and scenarios. The KQL scripts provided here offer a solid starting point for building your own world map visualizations—a crucial tool in today’s cybersecurity landscape.
 
